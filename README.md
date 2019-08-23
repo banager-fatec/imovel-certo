@@ -1,4 +1,4 @@
-# Banager
+# Imovel Certo
 
 **Desenvolvedores:**
 - [Fábio Romeiro](https://github.com/fabioromeiro)
@@ -11,7 +11,7 @@
 
 ### Proposta:
 
-O Banager é um trabalho semestral para a matéria de *Laboratório de Desenvolvimento em Banco de Dados IV* da FATEC, que consiste num gerenciador de biblioteca, onde o bibliotecário consegue controlar seu estoque (histórico de pessoas que alugaram um específico livro, cópias dos livros,...), visualizar seus clientes com entregas atrasadas e quanto de multa que cada devedor deve à sua biblioteca.
+O Imovel Certo é um trabalho semestral para a matéria de *Laboratório de Desenvolvimento em Banco de Dados IV* da FATEC, que consiste num site de busca de imovel, onde o usuário consegue procurar e cadastrar imoveis.
 
 ---
 

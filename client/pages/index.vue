@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        banager
+        Imovel Certo
       </h1>
       <h2 class="subtitle">
         Library manager
