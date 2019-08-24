@@ -1,7 +1,6 @@
 <template>
-  <div class="container">
+  <div class="landing">
     <div>
-      <logo />
       <h1 class="title">
         Imovel Certo
       </h1>
@@ -29,19 +28,15 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
 
 export default {
-  components: {
-    Logo
-  }
 }
 </script>
 
 <style>
-.container {
+.landing {
+  background-image:url('../static/house_banner.png');
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

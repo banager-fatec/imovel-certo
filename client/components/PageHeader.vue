@@ -34,6 +34,7 @@ export default {
   color: #ffffff;
   padding: 16px 0;
   box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+  height: 75px;
 }
 
 .header__informative {

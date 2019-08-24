@@ -11,7 +11,7 @@
             class="item" 
             v-for="item in items" 
             :key="item.title"
-            :class="{ 'item--active': item.isActive }" 
+            :class="{ 'item--active': isActive(item.to) }" 
             @click="goTo(item.to)"
           >
           <get-svg :icon="item.icon" />
@@ -36,32 +36,27 @@ export default {
         {
           title: 'Página inicial',
           to: 'index',
-          icon: '',
-          isActive: $nuxt.$route.name === 'index'
+          icon: ''
         },
         {
           title: 'Imoveis favoritos',
           to: 'favoritos',
-          icon: '',
-          isActive: $nuxt.$route.name === 'favoritos'
+          icon: ''
         },
         {
           title: 'Lançamento da região',
           to: 'lancamentos',
-          icon: '',
-          isActive: $nuxt.$route.name === 'lancamentos'
+          icon: ''
         },
         {
           title: 'Suas divulgações',
           to: 'divulgacoes',
-          icon: '',
-          isActive: $nuxt.$route.name === 'divulgacoes'
+          icon: ''
         },
         {
           title: 'Divulgar imovel',
           to: 'divulgar',
-          icon: '',
-          isActive: $nuxt.$route.name === 'divulgar'
+          icon: ''
         }
       ]
     };
@@ -76,7 +71,9 @@ export default {
     },
     goTo(routeName) {
       $nuxt.$router.replace({name: routeName});
-      console.log(this.items);
+    },
+    isActive(routeName) {
+      return $nuxt.$route.name === routeName;
     }
   }
 }
