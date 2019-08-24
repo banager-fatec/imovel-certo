@@ -2,12 +2,11 @@
   <header class="header">
     <div class="basic-wrapper">
       <div class="header__informative">
-        <Logo />
-        <InputSearch class="informative-search" placeholder="Autor, nome, ano de lançamento..." />
+        <div class="header-navigation">
+          <Navigator />
+          <Logo class="header-logo" />
+        </div>
         <ProfileBasic />
-      </div>
-      <div class="header__navigation">
-        <Navigator />
       </div>
     </div>
   </header>
@@ -15,7 +14,6 @@
 
 <script>
 import Logo from './Logo.vue';
-import InputSearch from './form/InputSearch.vue';
 import ButtonDefault from './form/ButtonDefault.vue';
 import ProfileBasic from './ProfileBasic.vue';
 import Navigator from './Navigator.vue';
@@ -23,7 +21,6 @@ import Navigator from './Navigator.vue';
 export default {
   components: {
     Logo,
-    InputSearch,
     ProfileBasic,
     Navigator,
     ButtonDefault
@@ -31,12 +28,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .header {
   background-color: #385683;
   color: #ffffff;
-  padding-top: 40px;
-  border-bottom: 3px solid #ffffff;
+  padding: 16px 0;
+  box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+  height: 75px;
 }
 
 .header__informative {
@@ -45,14 +43,27 @@ export default {
   align-items: center;
 }
 
+.header__informative .header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .header__informative .informative-search {
   max-width: 400px;
   margin: 0 24px;
 }
 
-.header__navigation {
-  margin-top: 32px;
+.header__informative .header-logo {
+  margin-left: 16px; 
+}
+
+.header__informative .header-logo svg {
+  width: 120px;
+  height: 34px;
+}
+
+.header-content {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader />
-    <nuxt />
+    <nuxt class="content-wrapper" />
   </div>
 </template>
 
@@ -77,5 +77,10 @@ body {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.content-wrapper {
+  height: calc(100vh - 75px);
+  overflow: auto;
 }
 </style>

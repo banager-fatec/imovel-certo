@@ -1,7 +1,7 @@
 {
-  "name": "banager",
+  "name": "imovelcerto",
   "version": "1.0.0",
-  "description": "Library manager",
+  "description": "Loja de imovel",
   "author": "FabioRomeiro",
   "private": true,
   "scripts": {
