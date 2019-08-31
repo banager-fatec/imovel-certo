@@ -58,3 +58,26 @@
 #20 C:\\laragon\\www\\ImovelCerto\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #21 {main}
 "} 
+[2019-08-30 22:10:09] local.ERROR: Command "migrate:" is ambiguous.
+Did you mean one of these?
+    migrate:fresh    Drop all tables and re-run all migrations
+    migrate:install  Create the migration repository
+    migrate:refresh  Reset and re-run all migrations
+    migrate:reset    Rollback all database migrations
+    migrate:rollback Rollback the last database migration
+    migrate:status   Show the status of each migration {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migrate:\" is ambiguous.
+Did you mean one of these?
+    migrate:fresh    Drop all tables and re-run all migrations
+    migrate:install  Create the migration repository
+    migrate:refresh  Reset and re-run all migrations
+    migrate:reset    Rollback all database migrations
+    migrate:rollback Rollback the last database migration
+    migrate:status   Show the status of each migration at C:\\laragon\\www\\ImovelCerto\\vendor\\symfony\\console\\Application.php:666)
+[stacktrace]
+#0 C:\\laragon\\www\\ImovelCerto\\vendor\\symfony\\console\\Application.php(236): Symfony\\Component\\Console\\Application->find('migrate:')
+#1 C:\\laragon\\www\\ImovelCerto\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\laragon\\www\\ImovelCerto\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\laragon\\www\\ImovelCerto\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(121): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\laragon\\www\\ImovelCerto\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
